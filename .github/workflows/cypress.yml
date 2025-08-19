@@ -42,7 +42,7 @@ jobs:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           # Creating a token https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    firefox-tests:
+  firefox-tests:
     runs-on: ubuntu-latest
     container:
       image: cypress/browsers:22.16.0
